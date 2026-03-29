@@ -1,0 +1,137 @@
+.prestige-blog-clean {
+    background-color: #ffffff;
+    padding-bottom: 100px;
+}
+
+.prestige-header-minimal {
+    padding: 60px 0 60px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.prestige-page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #1a1a1a;
+    letter-spacing: -2px;
+    margin: 0 0 15px 0;
+}
+
+.prestige-page-subtitle {
+    font-size: 16px;
+    color: #b79e6f;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.prestige-modern-list {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.modern-entry {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.entry-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.modern-entry:nth-child(even) .entry-wrapper {
+    flex-direction: row-reverse;
+}
+
+.entry-image-box {
+    flex: 0 0 320px;
+    height: 220px;
+    overflow: hidden;
+    background: #fcfcfc;
+}
+
+.image-hover-zoom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.modern-entry:hover img {
+    opacity: 0.8;
+}
+
+.entry-content-box {
+    flex: 1;
+}
+
+.entry-top-info {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #999;
+}
+
+.entry-category {
+    color: #b79e6f;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.entry-post-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+}
+
+.entry-post-title a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.entry-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.prestige-link-gold {
+    color: #b79e6f;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #b79e6f;
+    padding-bottom: 2px;
+    transition: 0.3s;
+}
+
+.prestige-link-gold:hover {
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
+@media (max-width: 800px) {
+    .entry-wrapper {
+        flex-direction: column !important;
+        gap: 30px;
+    }
+
+    .entry-image-box {
+        width: 100%;
+        height: 240px;
+    }
+
+    .prestige-page-title {
+        font-size: 42px;
+    }
+}
