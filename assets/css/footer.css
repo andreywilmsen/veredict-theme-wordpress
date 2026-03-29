@@ -1,0 +1,148 @@
+/* Footer */
+
+#mastfooter {
+    background-color: #0d0d0d;
+    padding: 80px 0 40px;
+    border-top: 1px solid rgba(183, 158, 111, 0.1);
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-title {
+    font-family: 'Playfair Display', serif;
+    color: #b79e6f;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.footer-navigation ul,
+.footer-links,
+.contact-info {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.footer-navigation ul li,
+.contact-info li {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-navigation ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-navigation ul li a:hover {
+    color: #b79e6f;
+    padding-left: 5px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    font-size: 13px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+}
+
+.footer-bottom a {
+    color: #b79e6f;
+    text-decoration: none;
+}
+
+.contact-info li a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact-info li a:hover {
+    color: #b79e6f;
+}
+
+.contact-info li a[href^="mailto:"],
+.contact-info li a[href^="tel:"] {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.contact-info li a[href^="mailto:"]:hover,
+.contact-info li a[href^="tel:"]:hover {
+    color: #b79e6f;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    #mastfooter {
+        padding: 60px 0 30px;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .footer-logo img {
+        margin: 0 auto 20px;
+    }
+
+    .footer-title::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background: #b79e6f;
+        margin: 10px auto;
+    }
+
+    .footer-navigation ul li a:hover {
+        padding-left: 0;
+        color: #ffffff;
+    }
+}

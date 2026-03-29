@@ -1,6 +1,4 @@
-/* ==========================================================================
-   HEADER - VEREDICT
-   ========================================================================== */
+/* Header */
 
 #masthead {
     height: 120px;
@@ -8,8 +6,8 @@
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
-    border-top: 2px solid #b79e6fd3 !important;
-    border-bottom: 2px solid #b79e6fd3;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
 .container-header {
@@ -21,7 +19,6 @@
     padding: 0 30px;
 }
 
-/* --- Logotipo --- */
 .logotipo {
     display: flex;
     align-items: center;
@@ -37,7 +34,6 @@
     object-fit: contain;
 }
 
-/* --- Navegação Desktop --- */
 #nav-menu {
     height: 100%;
     display: flex;
@@ -81,7 +77,6 @@
     display: inline-block;
 }
 
-/* --- Efeitos Hover Menu --- */
 #nav-menu ul:hover li a {
     opacity: 0.4;
 }
@@ -108,7 +103,6 @@
     width: 100%;
 }
 
-/* --- Botão Fale Conosco --- */
 .contact-us {
     display: flex;
     justify-content: center;
@@ -137,7 +131,6 @@
     transform: translateY(-2px);
 }
 
-/* --- Toggle Mobile (Escondido no Desktop) --- */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -157,11 +150,8 @@
     transition: all 0.3s ease;
 }
 
-/* ==========================================================================
-   MEDIA QUERIES (Responsividade)
-   ========================================================================== */
+/* Responsividade */
 
-/* Tablet e Telas Médias */
 @media (max-width: 992px) {
     #nav-menu ul li:not(:last-child)::after {
         margin: 0 15px;
@@ -173,7 +163,6 @@
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     #masthead {
         height: 90px;
@@ -183,7 +172,6 @@
         display: none !important;
     }
 
-    /* Hambúrguer */
     .mobile-menu-toggle {
         display: flex !important;
         z-index: 1001;
@@ -201,7 +189,6 @@
         transform: translateY(-9px) rotate(-45deg);
     }
 
-    /* Menu Mobile Overlay */
     #nav-menu {
         display: flex !important;
         position: fixed;
