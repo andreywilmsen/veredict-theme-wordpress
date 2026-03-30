@@ -38,6 +38,9 @@ function veredict_scripts()
     wp_enqueue_style('veredict-page', get_template_directory_uri() . '/assets/css/page.css', array('veredict-style'), '1.0.0');
     wp_enqueue_style('veredict-home', get_template_directory_uri() . '/assets/css/home.css', array('veredict-style'), '1.0.0');
     wp_enqueue_style('veredict-single', get_template_directory_uri() . '/assets/css/single.css', array('veredict-style'), '1.0.0');
+    wp_enqueue_style('veredict-search', get_template_directory_uri() . '/assets/css/search.css', array('veredict-style'), '1.0.0');
+    wp_enqueue_style('veredict-404', get_template_directory_uri() . '/assets/css/404.css', array('veredict-style'), '1.0.0');
+    wp_enqueue_style('veredict-archive', get_template_directory_uri() . '/assets/css/archive.css', array('veredict-style'), '1.0.0');
     wp_enqueue_script('veredict_scripts', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'veredict_scripts');

@@ -1,0 +1,99 @@
+.prestige-search-page.prestige-404-clean {
+    padding-top: 200px !important;
+    padding-bottom: 100px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.prestige-search-page .container-prestige-narrow {
+    max-width: 1200px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.prestige-search-page .error-code {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(100px, 20vw, 220px);
+    color: #f7f7f7;
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -8px;
+    margin-bottom: -40px;
+    display: block;
+}
+
+.prestige-search-page .prestige-page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 64px);
+    color: #1a1a1a;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.prestige-search-page .error-search-wrapper {
+    max-width: 550px !important;
+    margin: 0 auto 50px !important;
+    width: 100%;
+}
+
+.prestige-search-page .search-form {
+    display: flex !important;
+    border-bottom: 2px solid #1a1a1a !important;
+    align-items: center !important;
+}
+
+.prestige-search-page .search-form label {
+    flex: 1;
+    display: flex;
+}
+
+.prestige-search-page .search-field {
+    width: 100% !important;
+    padding: 15px 0 !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 18px !important;
+    outline: none !important;
+}
+
+.prestige-search-page .search-submit {
+    background: transparent !important;
+    border: none !important;
+    font-weight: 900 !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.prestige-modern-list {
+    text-align: left;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.modern-entry .entry-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .modern-entry .entry-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .prestige-search-page .error-code {
+        font-size: 80px;
+    }
+}

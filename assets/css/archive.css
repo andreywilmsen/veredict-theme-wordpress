@@ -1,0 +1,35 @@
+/* --- Archive / Category Page --- */
+.prestige-archive-page .prestige-header-minimal {
+    text-align: center;
+    padding: 80px 0 60px;
+}
+
+.prestige-page-subtitle {
+    font-size: 14px;
+    color: #999;
+    max-width: 600px;
+    margin: 20px auto 0;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Garante que a paginação do WP siga o estilo Prestige */
+.prestige-modern-pagination {
+    margin-top: 80px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+}
+
+.prestige-modern-pagination .page-numbers {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.prestige-modern-pagination .current {
+    color: #b79e6f;
+    font-weight: 700;
+}
